@@ -34,8 +34,8 @@ nav a:hover {
 .home {
     height: 90vh;
     background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("https://images.unsplash.com/photo-1585386959984-a4155224a1ad");
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0,0,0,0.54)),
+        url("shopping-bag-cart.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
