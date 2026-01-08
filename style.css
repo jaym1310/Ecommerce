@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -30,35 +30,54 @@ nav a:hover {
     color: #f39c12;
 }
 
-/* Home */
+/* ================= HERO / HOME ================= */
 .home {
     height: 90vh;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: #fff;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1585386959984-a4155224a1ad");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    padding-left: 80px;
+    color: #fff;
+}
+
+/* Hero Text */
+.hero-content {
+    max-width: 500px;
 }
 
 .home h1 {
-    font-size: 45px;
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
 .home p {
-    margin: 15px 0;
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 .home button {
-    padding: 12px 30px;
+    padding: 14px 35px;
+    font-size: 16px;
     border: none;
     background: #f39c12;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Sections */
+.home button:hover {
+    background: #e67e22;
+}
+
+/* ================= SECTIONS ================= */
 section {
     padding: 60px 50px;
     text-align: center;
@@ -70,7 +89,7 @@ section {
     line-height: 1.6;
 }
 
-/* Services */
+/* ================= SERVICES ================= */
 .service-box {
     display: flex;
     justify-content: center;
@@ -85,7 +104,7 @@ section {
     border-radius: 8px;
 }
 
-/* Products */
+/* ================= PRODUCTS ================= */
 .products {
     background: #f9f9f9;
 }
@@ -128,7 +147,7 @@ section {
     cursor: pointer;
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
 .contact form {
     max-width: 400px;
     margin: auto;
@@ -141,7 +160,7 @@ section {
     margin: 10px 0;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
     background: #111;
     color: #fff;
@@ -149,10 +168,25 @@ footer {
     text-align: center;
 }
 
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
+    }
+
+    .home {
+        padding-left: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .home h1 {
+        font-size: 34px;
     }
 
     .service-box {
